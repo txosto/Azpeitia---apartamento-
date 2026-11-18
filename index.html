@@ -1,1 +1,206 @@
-content://com.android.providers.downloads.ui.fileprovider/root_files_storage/emulated/0/Download/index(2).html
+HTML
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Apartamento Azpeitia - Gipuzkoa | Alojamiento turístico</title>
+
+<meta name="description" content="Apartamento turístico en Azpeitia, Gipuzkoa. Tres dormitorios. Consulta disponibilidad y reserva directamente por WhatsApp.">
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: #fff;
+}
+
+header {
+  background: #315b50;
+  color: white;
+  padding: 35px 20px;
+  text-align: center;
+}
+
+header h1 { margin: 0; font-size: 30px; }
+
+nav {
+  background: #24463e;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+section {
+  padding: 35px 20px;
+  max-width: 950px;
+  margin: auto;
+}
+
+h2 { color: #315b50; }
+
+.boton {
+  display: inline-block;
+  background: #25a95a;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.fotos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 15px;
+}
+
+.foto {
+  background: #e9eee9;
+  padding: 45px 10px;
+  text-align: center;
+  border-radius: 10px;
+  color: #315b50;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 13px;
+  margin: 8px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  background: #315b50;
+  color: white;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+footer {
+  background: #24463e;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Apartamento Azpeitia - Gipuzkoa</h1>
+<p>Alojamiento turístico en el corazón de Gipuzkoa</p>
+</header>
+
+<nav>
+<a href="#apartamento">Apartamento</a>
+<a href="#fotos">Fotos</a>
+<a href="#reservas">Reservas</a>
+</nav>
+
+<section id="apartamento">
+<h2>Bienvenidos a nuestro apartamento</h2>
+
+<p>
+Disfruta de una estancia cómoda y tranquila en Azpeitia,
+Gipuzkoa. Nuestro apartamento turístico es ideal para
+familias y grupos que quieran conocer Euskadi.
+</p>
+
+<h3>El alojamiento dispone de:</h3>
+<ul>
+<li>Tres dormitorios.</li>
+<li>Espacios cómodos y luminosos.</li>
+<li>Equipamiento para disfrutar de tu estancia.</li>
+<li>Buena ubicación para descubrir Gipuzkoa.</li>
+</ul>
+
+<a class="boton" href="https://wa.me/34635702068">
+Consultar por WhatsApp
+</a>
+</section>
+
+<section id="fotos">
+<h2>Fotos del apartamento</h2>
+<div class="fotos">
+<div class="foto">Salón</div>
+<div class="foto">Dormitorio principal</div>
+<div class="foto">Dormitorio de dos camas</div>
+<div class="foto">Tercer dormitorio</div>
+<div class="foto">Cocina</div>
+<div class="foto">Baño</div>
+</div>
+</section>
+
+<section id="reservas">
+<h2>Solicitar una reserva</h2>
+<p>Rellena el formulario y envíanos tu solicitud por WhatsApp.</p>
+
+<form onsubmit="enviarWhatsApp(event)">
+
+<label>Nombre</label>
+<input type="text" id="nombre" required>
+
+<label>Fecha de entrada</label>
+<input type="date" id="entrada" required>
+
+<label>Fecha de salida</label>
+<input type="date" id="salida" required>
+
+<label>Número de personas</label>
+<input type="number" id="personas" min="1" required>
+
+<label>Mensaje</label>
+<textarea id="mensaje" rows="4"></textarea>
+
+<button type="submit">Enviar solicitud de reserva</button>
+
+</form>
+</section>
+
+<footer>
+<p>Apartamento Azpeitia - Gipuzkoa</p>
+<p>Reservas directas por WhatsApp</p>
+</footer>
+
+<script>
+function enviarWhatsApp(event) {
+  event.preventDefault();
+
+  const nombre = document.getElementById("nombre").value;
+  const entrada = document.getElementById("entrada").value;
+  const salida = document.getElementById("salida").value;
+  const personas = document.getElementById("personas").value;
+  const mensaje = document.getElementById("mensaje").value;
+
+  const texto = "Hola, quiero solicitar una reserva.%0A" +
+    "Nombre: " + encodeURIComponent(nombre) + "%0A" +
+    "Entrada: " + entrada + "%0A" +
+    "Salida: " + salida + "%0A" +
+    "Personas: " + personas + "%0A" +
+    "Mensaje: " + encodeURIComponent(mensaje);
+
+  window.open("https://wa.me/34635702068?text=" + texto, "_blank");
+}
+</script>
+
+</body>
+</html>
