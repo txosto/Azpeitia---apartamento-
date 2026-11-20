@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Apartamento turístico en Azpeitia, Gipuzkoa. Tres dormitorios, dos baños, capacidad para seis personas. Reserva directamente por WhatsApp.">
+<meta name="robots" content="index, follow">
+<title>Apartamento Azpeitia - Gipuzkoa | Alojamiento turístico</title>
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;color:#333;background:#faf9f6;line-height:1.6}
+header{background:#253e36;color:white;text-align:center;padding:55px 20px}
+header h1{font-size:34px;margin:0 0 12px}
+header p{font-size:18px}
+nav{background:#fff;padding:15px;text-align:center;position:sticky;top:0;z-index:5;box-shadow:0 2px 8px #ddd}
+nav a{color:#253e36;text-decoration:none;margin:0 10px;font-weight:bold}
+button,.btn{border:0;border-radius:7px;padding:12px 20px;background:#b18a58;color:white;font-size:16px;cursor:pointer;text-decoration:none;display:inline-block;margin:5px}
+section{max-width:1050px;margin:35px auto;padding:20px}
+h2{color:#253e36;font-size:27px}
+.intro{text-align:center;font-size:19px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gallery a{display:block}
+.gallery img{width:100%;height:280px;object-fit:cover;border-radius:9px}
+.details{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.detail{background:white;padding:20px;border-radius:9px;text-align:center;box-shadow:0 2px 8px #ddd}
+.booking{background:#eee9df;padding:25px;border-radius:12px}
+input,textarea,select{width:100%;padding:12px;margin:8px 0;border:1px solid #bbb;border-radius:6px;font-size:16px}
+footer{background:#253e36;color:white;text-align:center;padding:30px}
+footer a{color:white}
+.lang{text-align:center;margin:15px}
+@media(max-width:650px){
+header h1{font-size:27px}
+.gallery{grid-template-columns:1fr}
+.gallery img{height:240px}
+.details{grid-template-columns:1fr}
+nav a{margin:5px;font-size:13px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Apartamento Azpeitia - Gipuzkoa</h1>
+<p id="subtitle">Un alojamiento amplio, cómodo y elegante para disfrutar de Gipuzkoa</p>
+<a class="btn" href="#reservar" id="topbutton">Consultar disponibilidad</a>
+</header>
+
+<nav>
+<a href="#apartamento" id="navhome">Apartamento</a>
+<a href="#fotos" id="navphotos">Fotos</a>
+<a href="#ubicacion" id="navlocation">Ubicación</a>
+<a href="#reservar" id="navbooking">Reservas</a>
+</nav>
+
+<div class="lang">
+<button onclick="setLang('es')">Castellano</button>
+<button onclick="setLang('eu')">Euskera</button>
+<button onclick="setLang('en')">English</button>
+</div>
+
+<section id="apartamento">
+<h2 id="welcome">Bienvenidos a Azpeitia</h2>
+<p class="intro" id="description">
+Disfruta de un apartamento turístico completo en el casco antiguo de Azpeitia.
+Un espacio amplio y acogedor, ideal para familias y grupos que quieran descubrir
+Gipuzkoa y el País Vasco.
+</p>
+
+<div class="details">
+<div class="detail">🛏️<br><strong>3 dormitorios</strong></div>
+<div class="detail">👨‍👩‍👧‍👦<br><strong>Hasta 6 huéspedes</strong></div>
+<div class="detail">🚿<br><strong>2 baños</strong></div>
+<div class="detail">🛌<br><strong>5 camas</strong></div>
+<div class="detail">📶<br><strong>Wifi</strong></div>
+<div class="detail">🚗<br><strong>Aparcamiento gratuito</strong></div>
+</div>
+
+<p id="amenities">
+El apartamento dispone de cocina equipada, horno, lavavajillas, lavadora,
+secadora, televisión y todo lo necesario para disfrutar de una estancia cómoda.
+</p>
+</section>
+
+<section id="fotos">
+<h2 id="phototitle">Conoce nuestro apartamento</h2>
+<p id="photodesc">Descubre algunos de sus espacios. Pulsa sobre cada fotografía para ampliarla.</p>
+
+<div class="gallery">
+<a href="https://a0.muscache.com/im/pictures/hosting/Hosting-857878675223603083/original/da99e208-6c83-40b3-92e7-dfb2d7749911.jpeg?im_w=720" target="_blank">
+<img src="https://a0.muscache.com/im/pictures/hosting/Hosting-857878675223603083/original/da99e208-6c83-40b3-92e7-dfb2d7749911.jpeg?im_w=720" alt="Salón del apartamento">
+</a>
+
+<a href="https://a0.muscache.com/im/pictures/hosting/Hosting-857878675223603083/original/e6dd9a6c-4ae8-491f-9eec-15c4cb9aa8bf.jpeg?im_w=720" target="_blank">
+<img src="https://a0.muscache.com/im/pictures/hosting/Hosting-857878675223603083/original/e6dd9a6c-4ae8-491f-9eec-15c4cb9aa8bf.jpeg?im_w=720" alt="Salón y comedor">
+</a>
+
+<a href="https://a0.muscache.com/im/pictures/hosting/Hosting-857878675223603083/original/7a67c9ec-fce0-4489-871c-25fc00444bb5.jpeg?im_w=720" target="_blank">
+<img src="https://a0.muscache.com/im/pictures/hosting/Hosting-857878675223603083/original/7a67c9ec-fce0-4489-871c-25fc00444bb5.jpeg?im_w=720" alt="Detalle del apartamento">
+</a>
+
+<a href="https://a0.muscache.com/im/pictures/hosting/Hosting-857878675223603083/original/cd13d103-1ec3-42e3-a7ad-18fd42333e7e.jpeg?im_w=720" target="_blank">
+<img src="https://a0.muscache.com/im/pictures/hosting/Hosting-857878675223603083/original/cd13d103-1ec3-42e3-a7ad-18fd42333e7e.jpeg?im_w=720" alt="Zona de trabajo">
+</a>
+</div>
+
+<p style="text-align:center">
+<a class="btn" href="https://www.airbnb.es/rooms/857878675223603083" target="_blank" rel="noopener">
+Ver todas las fotografías y el anuncio en Airbnb
+</a>
+</p>
+</section>
+
+<section id="ubicacion">
+<h2 id="locationtitle">Una ubicación ideal en Azpeitia</h2>
+<p id="locationdesc">
+Situado en el casco antiguo de Azpeitia, cerca de bares, restaurantes,
+supermercados y comercios. El Museo Vasco del Ferrocarril se encuentra
+a unos cinco minutos caminando.
+</p>
+<p><strong>Azpeitia, Gipuzkoa, País Vasco.</strong></p>
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Azpeitia+Gipuzkoa" target="_blank" rel="noopener">
+Ver ubicación en Google Maps
+</a>
+</section>
+
+<section id="reservar">
+<div class="booking">
+<h2 id="bookingtitle">Reserva directamente con nosotros</h2>
+<p id="bookingdesc">
+Consulta disponibilidad y condiciones sin intermediarios.
+Envíanos tu solicitud y te responderemos personalmente.
+</p>
+
+<form id="bookingform">
+<label id="namelabel">Nombre</label>
+<input id="name" required placeholder="Tu nombre">
+
+<label id="arrivallabel">Fecha de llegada</label>
+<input id="arrival" type="date" required>
+
+<label id="departurelabel">Fecha de salida</label>
+<input id="departure" type="date" required>
+
+<label id="guestslabel">Número de huéspedes</label>
+<select id="guests">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option selected>6</option>
+</select>
+
+<label id="messagelabel">Mensaje adicional</label>
+<textarea id="message" rows="3" placeholder="Escribe aquí tu consulta"></textarea>
+
+<button type="submit" id="sendbutton">Enviar solicitud por WhatsApp</button>
+</form>
+
+<p style="text-align:center">
+<strong>WhatsApp: 635 702 068</strong>
+</p>
+
+<a class="btn" href="https://wa.me/34635702068" target="_blank" rel="noopener">
+Contactar directamente por WhatsApp
+</a>
+</div>
+</section>
+
+<footer>
+<h2 style="color:white">Apartamento Azpeitia - Gipuzkoa</h2>
+<p>Alojamiento turístico autorizado</p>
+<p>Número de licencia turística: ESS03186</p>
+<p>© 2026 Apartamento Azpeitia - Gipuzkoa</p>
+</footer>
+
+<script>
+const translations = {
+es: {
+subtitle:"Un alojamiento amplio, cómodo y elegante para disfrutar de Gipuzkoa",
+topbutton:"Consultar disponibilidad",
+navhome:"Apartamento",navphotos:"Fotos",navlocation:"Ubicación",navbooking:"Reservas",
+welcome:"Bienvenidos a Azpeitia",
+description:"Disfruta de un apartamento turístico completo en el casco antiguo de Azpeitia. Un espacio amplio y acogedor, ideal para familias y grupos que quieran descubrir Gipuzkoa y el País Vasco.",
+amenities:"El apartamento dispone de cocina equipada, horno, lavavajillas, lavadora, secadora, televisión y todo lo necesario para disfrutar de una estancia cómoda.",
+phototitle:"Conoce nuestro apartamento",
+photodesc:"Descubre algunos de sus espacios. Pulsa sobre cada fotografía para ampliarla.",
+locationtitle:"Una ubicación ideal en Azpeitia",
+locationdesc:"Situado en el casco antiguo de Azpeitia, cerca de bares, restaurantes, supermercados y comercios. El Museo Vasco del Ferrocarril se encuentra a unos cinco minutos caminando.",
+bookingtitle:"Reserva directamente con nosotros",
+bookingdesc:"Consulta disponibilidad y condiciones sin intermediarios. Envíanos tu solicitud y te responderemos personalmente.",
+namelabel:"Nombre",arrivallabel:"Fecha de llegada",departurelabel:"Fecha de salida",guestslabel:"Número de huéspedes",messagelabel:"Mensaje adicional",sendbutton:"Enviar solicitud por WhatsApp"
+},
+eu: {
+subtitle:"Gipuzkoa ezagutzeko apartamentu zabal, eroso eta dotorea",
+topbutton:"Eskuragarritasuna kontsultatu",
+navhome:"Apartamentua",navphotos:"Argazkiak",navlocation:"Kokapena",navbooking:"Erreserbak",
+welcome:"Ongi etorri Azpeitira",
+description:"Gozatu Azpeitiko alde zaharrean dagoen turismo-apartamentu oso batez. Gipuzkoa eta Euskal Herria ezagutu nahi dituzten familientzat eta taldeentzat espazio zabala eta atsegina.",
+amenities:"Apartamentuak sukalde hornitua, labea, ontzi-garbigailua, garbigailua, lehorgailua eta telebista ditu, egonaldi eroso baterako.",
+phototitle:"Ezagutu gure apartamentua",
+photodesc:"Ezagutu apartamentuko espazioak. Sakatu argazkietan handitzeko.",
+locationtitle:"Kokapen ezin hobea Azpeitian",
+locationdesc:"Azpeitiko alde zaharrean dago, taberna, jatetxe, supermerkatu eta dendetatik gertu. Euskal Trenbidearen Museoa bost minutura dago oinez.",
+bookingtitle:"Erreserbatu zuzenean gurekin",
+bookingdesc:"Kontsultatu eskuragarritasuna eta baldintzak bitartekaririk gabe. Bidali zure eskaera eta pertsonalki erantzungo dizugu.",
+namelabel:"Izena",arrivallabel:"Iritsiera-data",departurelabel:"Irteera-data",guestslabel:"Gonbidatu kopurua",messagelabel:"Mezu gehigarria",sendbutton:"Eskaera WhatsApp bidez bidali"
+},
+en: {
+subtitle:"A spacious, comfortable and elegant place to enjoy Gipuzkoa",
+topbutton:"Check availability",
+navhome:"Apartment",navphotos:"Photos",navlocation:"Location",navbooking:"Bookings",
+welcome:"Welcome to Azpeitia",
+description:"Enjoy a fully equipped holiday apartment in the old town of Azpeitia. A spacious and welcoming place, ideal for families and groups wishing to discover Gipuzkoa and the Basque Country.",
+amenities:"The apartment has a fully equipped kitchen, oven, dishwasher, washing machine, dryer and television for a comfortable stay.",
+phototitle:"Discover our apartment",
+photodesc:"Explore some of the spaces. Tap each photo to enlarge it.",
+locationtitle:"An ideal location in Azpeitia",
+locationdesc:"Located in Azpeitia's old town, close to bars, restaurants, supermarkets and shops. The Basque Railway Museum is about a five-minute walk away.",
+bookingtitle:"Book directly with us",
+bookingdesc:"Check availability and conditions directly with us. Send your request and we will reply personally.",
+namelabel:"Name",arrivallabel:"Arrival date",departurelabel:"Departure date",guestslabel:"Number of guests",messagelabel:"Additional message",sendbutton:"Send request via WhatsApp"
+}
+};
+
+function setLang(lang){
+const t=translations[lang];
+for(const id in t){
+const el=document.getElementById(id);
+if(el)el.textContent=t[id];
+}
+document.documentElement.lang=lang;
+}
+
+document.getElementById("bookingform").addEventListener("submit",function(e){
+e.preventDefault();
+const name=document.getElementById("name").value;
+const arrival=document.getElementById("arrival").value;
+const departure=document.getElementById("departure").value;
+const guests=document.getElementById("guests").value;
+const message=document.getElementById("message").value;
+
+if(departure<=arrival){
+alert("La fecha de salida debe ser posterior a la de llegada.");
+return;
+}
+
+const text="Hola, quiero solicitar una reserva en Apartamento Azpeitia - Gipuzkoa.%0A"+
+"Nombre: "+encodeURIComponent(name)+"%0A"+
+"Llegada: "+encodeURIComponent(arrival)+"%0A"+
+"Salida: "+encodeURIComponent(departure)+"%0A"+
+"Huéspedes: "+encodeURIComponent(guests)+"%0A"+
+"Mensaje: "+encodeURIComponent(message);
+
+window.open("https://wa.me/34635702068?text="+text,"_blank");
+});
+</script>
+
+</body>
+</html>
